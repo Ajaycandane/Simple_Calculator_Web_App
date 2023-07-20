@@ -263,6 +263,9 @@ h1{
     
 }
 @media (max-width:633px) {
+    .wrapper{
+    margin-top:2rem;
+}
     body{overflow: hidden;
         background-size: 400vw;
     }
@@ -281,6 +284,9 @@ h1{
     
 }
 @media (max-width:486px) {
+    .wrapper{
+    margin-top:2rem;
+}
     body{overflow: hidden;
         background-size: 600vw;
     }
