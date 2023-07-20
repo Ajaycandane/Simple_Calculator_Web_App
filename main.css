@@ -1,0 +1,300 @@
+
+::-webkit-scrollbar {
+    display: none;
+    }
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'montserrat',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background:url("bg1.png") no-repeat center center/ cover;
+    background-size:120vw;
+    color: #f0f8ff;  
+    overflow: hidden;
+    height: 100vh; 
+}
+.wrapper{
+    margin-top:5rem;
+}
+
+.glass {
+
+  border-radius:20px;
+  background:  rgba( 255, 255, 255, 0.1 );
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+  width:100%;
+  margin:auto;
+  position: relative;
+  
+}
+
+
+h1{ 
+    padding:0.3em;
+    text-align: center;    
+    letter-spacing:0.6em;
+    user-select:none;
+    margin:auto;
+}
+
+.float img{
+    width:2em;
+    animation: float 6s linear infinite;
+}
+.float{
+    width:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    position: relative;
+    bottom:-7em;
+   
+}
+
+@keyframes float{
+   0%{transform:translateY(0);
+     opacity: 0;}
+   20%{
+     opacity: 0.2;}
+   40%{
+     opacity: 0.3;}
+   60%{
+     opacity: 0.4;}
+   80%{
+     opacity: 0.2;} 
+   100%{transform:translateY(-110vh);
+     opacity: 0;}
+}
+.float img:nth-child(1) {
+    
+    animation-delay: 2s;
+    width:25px;
+    }
+    .float img:nth-child(2) {
+    animation-delay: 1s;
+    }
+    .float img:nth-child(3) {
+    animation-delay: 3s;
+    width:17px;
+    }
+    .float img:nth-child(4) {
+    animation-delay: 4.5s;
+    width:25px;
+    }
+    .float img:nth-child(5) {
+    animation-delay: 3s;
+    }
+    .float img:nth-child(6) {
+    animation-delay: 6s;
+    width:17px;
+    }
+    .float img:nth-child(7) {
+    animation-delay: 7s;
+    width:25px;
+    }
+    .float img:nth-child(8) {
+    animation-delay: 2s;
+    }
+    .float img:nth-child(9) {
+    animation-delay: 5s;
+    width:17px;
+    }
+    .float img:nth-child(10) {
+    animation-delay: 6s;
+    width:25px;
+    }
+    .float img:nth-child(11) {
+    animation-delay: 1.5s;
+    }
+    .float img:nth-child(12) {
+    animation-delay: 7s;
+    width:17px;
+    }
+    .float img:nth-child(13) {
+    animation-delay: 3.5s;
+    width:25px;
+    }
+    .float img:nth-child(14) {
+    animation-delay: 4s;
+    width:17px;
+    }
+    .float img:nth-child(15) {
+    animation-delay: 5.5s;
+    }
+    .float img:nth-child(16) {
+    animation-delay: 2s;
+    width:16px;
+    }
+    .float img:nth-child(17) {
+        animation-delay: 6s;
+        width:17px;
+        }
+        .float img:nth-child(18) {
+        animation-delay: 7s;
+        width:25px;
+        }
+        .float img:nth-child(19) {
+        animation-delay: 2s;
+        }
+        .float img:nth-child(20) {
+        animation-delay: 5s;
+        width:17px;
+        }
+        .float img:nth-child(10) {
+        animation-delay: 6s;
+        width:25px;
+        }
+
+
+.Calculator{
+    margin-top:1.5rem;
+    border-radius: 1.2rem;
+    background:  rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);  
+    padding:1em;
+    
+}
+.Calculator form input{
+    border: 0;
+    outline: 0;
+    width:5rem;
+    height:4rem;  
+    border-radius:0.9rem;
+    border: 2px solid rgba(255, 255, 255, 0.041);
+    box-shadow: -8px -8px 15px rgba( 0, 0, 0, 0.1 );
+    background:  rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    font-size: 1.5rem;
+    color:#fff;
+    cursor: pointer;
+    margin:0.5em;
+}
+
+.display {
+   display: flex;
+   
+}
+
+.display input{
+    padding-right:1em;
+    text-align: right;
+    flex:1;
+    font-size:1rem;
+    box-shadow: none;
+    background:none;
+    backdrop-filter:none;
+    border:none;
+}
+#equal{
+    width:7.5em;
+    color:rgb(7, 199, 228);
+    background:  rgba(86, 3, 53, 0.171);
+    backdrop-filter: blur(5px);   
+}
+
+.btn:hover{
+    background-color:#000;
+    opacity:0.2;
+}
+#operator{
+    color:rgb(7, 199, 228);
+    background:  rgba(86, 3, 53, 0.171);
+    backdrop-filter: blur(5px);   
+}
+
+.bts .btn{
+    font-weight: bold;
+}
+
+.bts1 input:nth-child(4){
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.bts2 input:nth-child(3){
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media (max-width:1128px) {
+    body{overflow: hidden;
+        background-size: 150vw;
+    }
+    .Calculator form input{
+       
+        width:4rem;
+        height:3rem;  
+      
+    }
+
+    #equal{
+        width:6.2em;
+    }
+
+    
+    
+}
+@media (max-width:914px) {
+    body{overflow: hidden;
+        background-size: 230vw;
+    }
+    .Calculator form input{
+       
+        width:4rem;
+        height:3rem;  
+      
+    }
+
+    #equal{
+        width:6.2em;
+    }
+
+    
+    
+}
+@media (max-width:633px) {
+    body{overflow: hidden;
+        background-size: 400vw;
+    }
+    .Calculator form input{
+        font-size: 1rem;
+        width:4rem;
+        height:3rem;  
+      
+    }
+
+    #equal{
+        width:6.2em;
+    }
+
+    
+    
+}
+@media (max-width:486px) {
+    body{overflow: hidden;
+        background-size: 600vw;
+    }
+    .Calculator form input{
+       
+        width:4rem;
+        height:3rem;  
+      
+    }
+
+    #equal{
+        width:6.2em;
+    }
+
+    
+    
+}
