@@ -329,7 +329,7 @@ h1{
 }
 @media (max-width:486px) {
     .wrapper{
-        margin-top:2rem;
+        margin-bottom:8rem;
     }
     body{overflow: hidden;
         background-size: 600vw;
@@ -340,11 +340,41 @@ h1{
         height:3rem;  
       
     }
+    .float{
+       bottom: -13em;
+    }
 
     #equal{
         width:6.2em;
     }
+   
+}
+@media (max-width:390px) {
+    h1{
+        font-size:1.8em;
+        letter-spacing: 0.2em;
+    }
+    .wrapper{
+        margin-bottom:8rem;
+    }
+    body{overflow: hidden;
+        background-size: 600vw;
+    }
+    .Calculator{
+        padding:0.5em;
+    }
+    .Calculator form input{
+       border-radius: 8px;
+        width:3.5rem;
+        height:2.5rem;  
+      
+    }
+    .float{
+       bottom: -16em;
+    }
 
-    
-    
+    #equal{
+        width:4.5em;
+    }
+   
 }
