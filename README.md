@@ -10,4 +10,4 @@ computing expressions with remarkable speed and precision.
 
 To elevate the aesthetic appeal, we integrated the Montserrat font from Google Fonts, providing a sleek and modern typography that complements the overall 
 design.In conclusion this web-based calculator offers a seamless and professional arithmetic experience, ensuring precision and convenience for users with 
-its modern interface and dynamic features.
+its modern interface and dynamic features and its responsive for both mobile and laptop.
