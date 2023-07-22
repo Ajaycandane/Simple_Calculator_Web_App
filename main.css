@@ -21,17 +21,6 @@ body{
 .wrapper{
     margin-top:5rem;
 }
-  .block-ui__wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999;
-    display: none;
-    background: #000;
-    color: #fff;
-  }
 
 .glass {
 
@@ -164,7 +153,18 @@ h1{
         width:25px;
         }
 
-
+        .block-ui__wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+            display: none;
+           
+            background: #000;
+            color: #fff;
+          }
 .Calculator{
     margin-top:1.5rem;
     border-radius: 1.2rem;
@@ -273,15 +273,12 @@ h1{
     
     
 }
-@media (max-width: 767px)
+
+  @media (max-width: 900px)
    and (-webkit-min-device-pixel-ratio: 2)
    and (orientation: landscape) {
      .block-ui__wrapper {
          display: block;
-         /*
-         However, here is some extra snacks for you.
-         To align everything in center.
-         */
          display: -webkit-box;
          display: -webkit-flex;
          display: -moz-box;
@@ -299,10 +296,20 @@ h1{
                  align-items: center;
      }
    }
+   @media (max-width: 900px)
+   and (-webkit-min-device-pixel-ratio: 2)
+   and (orientation: landscape) {
+     .full-content__wrapper {
+       overflow: hidden;
+       position: fixed;
+       height: 100%;
+       width: 100%;
+     }
+ }
 @media (max-width:633px) {
     .wrapper{
-    margin-top:2rem;
-}
+        margin-top:3rem;
+    }
     body{overflow: hidden;
         background-size: 400vw;
     }
@@ -322,8 +329,8 @@ h1{
 }
 @media (max-width:486px) {
     .wrapper{
-    margin-top:2rem;
-}
+        margin-top:2rem;
+    }
     body{overflow: hidden;
         background-size: 600vw;
     }
