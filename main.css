@@ -349,7 +349,7 @@ h1{
     }
    
 }
-@media (max-width:390px) {
+@media (max-width:425px) {
     h1{
         font-size:1.8em;
         letter-spacing: 0.2em;
